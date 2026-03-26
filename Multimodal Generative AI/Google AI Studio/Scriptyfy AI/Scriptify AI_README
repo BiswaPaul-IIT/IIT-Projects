@@ -1,0 +1,77 @@
+# Scriptify AI 🖋️✨
+
+**Scriptify AI** is a sophisticated, full-stack AI-powered application that transforms handwritten notes into clean, structured, and professionally formatted digital documents.
+
+Using the power of Google's Gemini 3 Flash model, Scriptify AI doesn't just perform OCR; it understands the context, fixes grammar, structures headings, and even generates concise executive summaries of your notes.
+
+![Scriptify AI Banner](https://picsum.photos/seed/scriptify/1200/400)
+
+## ✨ Features
+
+- **Handwriting-to-Digital**: Advanced OCR optimized for handwritten text using Gemini 3 Flash.
+- **AI Document Structuring**: Automatically detects titles, headings, subheadings, and bullet points.
+- **Smart Cleaning**: Fixes OCR errors, improves grammar, and preserves paragraphs while maintaining original meaning.
+- **AI Summarization**: Generate a concise "Executive Summary" of your notes with one click.
+- **Professional PDF Export**: Export your structured notes into high-quality, multi-page PDFs with automatic page numbering and elegant typography.
+- **Fancy UI/UX**: A premium "editorial" aesthetic featuring glassmorphism, smooth animations (Framer Motion), and responsive design.
+- **AI-Generated Identity**: Features a unique logo generated in real-time by Gemini 2.5 Flash Image.
+- **Image Compression**: Client-side image optimization to handle high-resolution uploads efficiently.
+
+## 🚀 Tech Stack
+
+- **Frontend**: React 19, Tailwind CSS 4.0, Framer Motion, Lucide React.
+- **Backend**: Express.js, Vite (Middleware Mode).
+- **AI Engine**: Google Gemini API (`@google/genai`).
+- **PDF Generation**: `jsPDF`, `html2canvas`.
+- **Language**: TypeScript.
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- A Google Gemini API Key (Get one at [AI Studio](https://aistudio.google.com/))
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/scriptify-ai.git
+   cd scriptify-ai
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**:
+   Create a `.env` file in the root directory and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   APP_URL=http://localhost:3000
+   ```
+
+4. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app**:
+   Navigate to `http://localhost:3000` in your browser.
+
+## 📖 Usage
+
+1. **Upload**: Drag and drop an image or scanned PDF of your handwritten notes.
+2. **Process**: Click **"Transcribe & Format"**. Wait for the AI to analyze and structure your content.
+3. **Review & Edit**: Switch between **Preview** mode (rendered Markdown) and **Edit** mode (raw text) to refine the output.
+4. **Summarize**: Click the **"Summarize"** button to get an AI-generated overview of your notes.
+5. **Export**: Click **"Download PDF"** to save your structured document.
+
+## 📝 License
+
+This project is licensed under the Apache-2.0 License.
+
+---
+
+Built with ❤️ using Google Gemini and React.
