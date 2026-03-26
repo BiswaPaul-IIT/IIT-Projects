@@ -1,0 +1,73 @@
+# LearnScape Lab.ai 🧠✨
+
+**LearnScape Lab.ai** is a cutting-edge multimodal virtual teacher designed to make learning interactive, visual, and auditory. Simply input any concept, and our AI-powered engine will generate a comprehensive explanation, a custom illustration, and a narrated audio summary—all in real-time.
+
+---
+
+## 🚀 Features
+
+- **Multimodal Explanations**: Get text, images, and audio for every concept.
+- **AI-Powered Intelligence**:
+  - **Text**: Powered by **Gemini 3.1 Pro** for deep, accurate reasoning.
+  - **Illustrations**: Custom-generated visuals using **Gemini 2.5 Flash Image**.
+  - **Narrated Audio**: High-quality TTS summaries via **Gemini 2.5 Flash**.
+- **Futuristic UI**: A sleek, modern interface built with **Tailwind CSS 4** and **Framer Motion** for smooth, interactive animations.
+- **Parallel Generation**: All AI models run in parallel, ensuring lightning-fast results.
+- **Web Audio API**: Robust audio playback using `AudioContext` for a seamless experience.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript, Vite
+- **Styling**: Tailwind CSS 4, Lucide React
+- **Animations**: Framer Motion
+- **AI Engine**: Google Gemini API (`@google/genai`)
+- **Audio**: Web Audio API
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Prerequisites
+- Node.js (v18+)
+- A Google Gemini API Key (Get one at [AI Studio](https://aistudio.google.com/))
+
+### 2. Environment Variables
+Create a `.env` file in the root directory and add your API key:
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+### 3. Install Dependencies
+```bash
+npm install
+```
+
+### 4. Run the Development Server
+```bash
+npm run dev
+```
+
+---
+
+## 📖 How It Works
+
+1. **Input a Concept**: Type any topic (e.g., "Quantum Entanglement", "Photosynthesis") into the search bar.
+2. **AI Processing**: The system triggers three parallel requests to Gemini models.
+3. **Interactive Results**:
+   - Read the detailed markdown explanation.
+   - View the AI-generated illustration.
+   - Click **Play** to hear a concise audio summary.
+
+---
+
+## 🎨 Branding
+
+The app features a custom, AI-generated logo that pulses and glows, reflecting the dynamic nature of learning in the digital age.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
